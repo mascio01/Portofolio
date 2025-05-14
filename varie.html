@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>varie  - Nicolò Mascella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-raccolte.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h2>Foto di Nicolò Mascella</h2>
+    <h1>Varie/Prova </h1>
+  </header>
+
+  <main class="photo-grid" id="galleria"></main>
+  <div class="gallery-nav">
+    <a href="Roma.html">Roma <span class="arrow">›</span></a>
+    <a href="25aprile.html"><span class="arrow">‹</span> 25 Aprile</a>
+  </div>
+
+  <footer>
+    <div class="footer-left">Foto di</div>
+    <a href="https://www.instagram.com/n.mascio/" target="_blank" class="footer-center">
+      <img src="img/ig.png" alt="Instagram" />
+    </a>
+    <div class="footer-right">nicolomascella@gmail.com</div>
+  </footer>
+
+  <script>
+    const numeroImmagini = 6; // aggiorna se servono più immagini
+    const contenitore = document.getElementById("galleria");
+
+    for (let i = 1; i <= numeroImmagini; i++) {
+      const img = document.createElement("img");
+      img.src = `img/varie${i}.jpg`;
+      img.alt = `Varie/Prova ${i}`;
+      contenitore.appendChild(img);
+    }
+  </script>
+</body>
+</html>
